@@ -10,10 +10,10 @@ export function randomizeNumber(
   let randomNumber =
     minimumNumber + Math.floor(Math.random() * (maximumNumber - minimumNumber));
   if (randomNumber === currentNumber) {
-    randomNumber++;
+    ++randomNumber;
   }
   if (randomNumber > maximumNumber) {
-    randomNumber - 2;
+    randomNumber -= 2;
   }
   return randomNumber;
 }

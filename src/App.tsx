@@ -8,13 +8,13 @@ import {
   StatusBar,
   Platform,
 } from 'react-native';
-import {Picker} from '@react-native-community/picker';
 
 import CustomTextInput from './components/molecules/CustomTextInput';
 import CustomText from './components/atoms/CustomText';
 import data from './data';
 import ReadVerse from './components/organisms/ReadVerse';
 import {randomizeNumber} from './utils/NumberUtils';
+import CustomPicker from './components/molecules/CustomPicker';
 
 function App() {
   const [chapter, setChapter] = React.useState(data[0].chapterNo);
@@ -50,22 +50,23 @@ function App() {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <CustomText>Pilih surat:</CustomText>
-          <View style={{backgroundColor: 'white', marginLeft: 8}}>
-            <Picker
+          <View
+            style={{
+              backgroundColor: 'white',
+              marginLeft: 8,
+            }}>
+            <CustomPicker
+              selectedStyle={{
+                padding: 8,
+              }}
+              options={data.map((el) => ({
+                label: `${el.chapterNo}. ${el.chapterName}`,
+                value: el.chapterNo,
+              }))}
+              placeholder="--- Pilih surat ---"
+              onValueChange={(itemValue) => setChapter(Number(itemValue))}
               selectedValue={chapter}
-              style={{height: 50, width: 200}}
-              onValueChange={(itemValue) => {
-                console.log(itemValue.toString());
-                setChapter(Number(itemValue));
-              }}>
-              {data.map((el) => (
-                <Picker.Item
-                  key={el.chapterNo}
-                  label={`${el.chapterNo}. ${el.chapterName}`}
-                  value={el.chapterNo}
-                />
-              ))}
-            </Picker>
+            />
           </View>
         </View>
         <View style={{height: 16}} />

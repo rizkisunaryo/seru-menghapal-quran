@@ -1,4 +1,4 @@
-package com.serumenghapalquran;
+package com.rizkisunaryo.serumenghapalquran;
 
 import com.facebook.react.ReactActivity;
 

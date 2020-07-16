@@ -6,8 +6,8 @@ import ShowButtonAnswer from '../molecules/ShowButtonAnswer';
 import data from '../../data';
 
 function ReadVerse(props: {visible: boolean; chapter: number; verse: number}) {
-  const selectedData = data.find((el) => el.chapterNo === props.chapter)
-    ?.verses[props.verse];
+  const chapterData = data.find((el) => el.chapterNo === props.chapter);
+  const selectedData = chapterData?.verses[props.verse];
 
   const [helper, setHelper] = React.useState('');
   const [showFull, setShowFull] = React.useState(false);
@@ -26,7 +26,10 @@ function ReadVerse(props: {visible: boolean; chapter: number; verse: number}) {
     <>
       <CustomText style={{textAlign: 'center'}}>
         Silahkan baca surat{' '}
-        <CustomText style={{fontWeight: 'bold'}}>Al-Baqarah</CustomText> ayat:
+        <CustomText style={{fontWeight: 'bold'}}>
+          {chapterData?.chapterName}
+        </CustomText>{' '}
+        ayat:
       </CustomText>
       <CustomText style={{fontSize: 30, textAlign: 'center'}}>
         {props.verse}

@@ -1,4 +1,4 @@
-package com.serumenghapalquran;
+package com.rizkisunaryo.serumenghapalquran;
 
 import android.app.Application;
 import android.content.Context;

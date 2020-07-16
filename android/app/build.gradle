@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.serumenghapalquran"
+        applicationId "com.rizkisunaryo.serumenghapalquran"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

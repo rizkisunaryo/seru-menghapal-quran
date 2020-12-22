@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "573711176460",
+    "firebase_url": "https://renovasi-357ee.firebaseio.com",
+    "project_id": "renovasi-357ee",
+    "storage_bucket": "renovasi-357ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573711176460:android:a8899b20a6eaefb2196f29",
+        "android_client_info": {
+          "package_name": "id.renovasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573711176460-k6n6r3amjm8a6c1anrplimsdjkg4e84i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQf6F8ldBy1rJMkZ2UV0eQOAyb4XUFl20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573711176460-k6n6r3amjm8a6c1anrplimsdjkg4e84i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

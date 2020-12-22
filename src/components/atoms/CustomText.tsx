@@ -1,9 +1,17 @@
 import React from 'react';
-import {TextProperties, Text} from 'react-native';
+import {Text, TextProps} from 'react-native';
 
-function CustomText(props: TextProperties & {children?: any}) {
+function CustomText(props: TextProps & {children?: any; bold?: boolean}) {
   return (
-    <Text {...props} style={[{fontSize: 15}, props.style]}>
+    <Text
+      {...props}
+      style={[
+        {
+          fontSize: 15,
+          fontFamily: props.bold ? 'Quicksand-Bold' : 'Quicksand-Light',
+        },
+        props.style,
+      ]}>
       {props.children}
     </Text>
   );

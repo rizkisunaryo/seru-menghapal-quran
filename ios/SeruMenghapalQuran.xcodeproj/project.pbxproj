@@ -17,6 +17,8 @@
 		2DCD954D1E0B4F2C00145EB5 /* SeruMenghapalQuranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SeruMenghapalQuranTests.m */; };
 		6DE1035BF7DE317FE9E328C2 /* libPods-SeruMenghapalQuran.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B32E30124374EF66F22F144 /* libPods-SeruMenghapalQuran.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9CE3C0FBDEB0441A9C8DD149 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */; };
+		B8E2FCB57EF84E128EE79850 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B09218AD99CA48BFAE97373C /* Quicksand-Light.ttf */; };
 		C5A2E9E15985BB9A5A338FCD /* libPods-SeruMenghapalQuran-SeruMenghapalQuranTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F36FD6641BD6D81442298FE /* libPods-SeruMenghapalQuran-SeruMenghapalQuranTests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,11 +56,14 @@
 		2D02E4901E0B4A5D006451C7 /* SeruMenghapalQuran-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeruMenghapalQuran-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SeruMenghapalQuran/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		920AE01196CF291853BA329C /* Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.release.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BCB9535778F4C6DB4A0A7E5 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		A73D6623F5213E78782B8867 /* Pods-SeruMenghapalQuran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran.release.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran/Pods-SeruMenghapalQuran.release.xcconfig"; sourceTree = "<group>"; };
+		B09218AD99CA48BFAE97373C /* Quicksand-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.ttf"; path = "../assets/fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		D5B2C53165757B8DB1E88994 /* Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.debug.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F3E913972B31574447799D3B /* Pods-SeruMenghapalQuran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran.debug.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran/Pods-SeruMenghapalQuran.debug.xcconfig"; sourceTree = "<group>"; };
+		F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Bold.ttf"; path = "../assets/fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +158,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				896751923113820FB4EA36BE /* Pods */,
+				955C45EF3A8E4B739647C81D /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -179,6 +185,16 @@
 				920AE01196CF291853BA329C /* Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		955C45EF3A8E4B739647C81D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */,
+				9BCB9535778F4C6DB4A0A7E5 /* Quicksand-Regular.ttf */,
+				B09218AD99CA48BFAE97373C /* Quicksand-Light.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +339,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				9CE3C0FBDEB0441A9C8DD149 /* Quicksand-Bold.ttf in Resources */,
+				B8E2FCB57EF84E128EE79850 /* Quicksand-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

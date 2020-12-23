@@ -1,10 +1,23 @@
 import React from 'react';
-import {TextInput, View} from 'react-native';
+import {StyleProp, TextInput, TextStyle, View} from 'react-native';
 import RangeSlider from 'rn-range-slider';
 
 import {COLOR_GREY, COLOR_PRIMARY} from '../../constants/Colors';
 import {STYLE_BOX_SHADOW} from '../../constants/Styles';
 import CustomText from '../atoms/CustomText';
+
+const textInputStyle: StyleProp<TextStyle> = {
+  flex: 1,
+  height: 24,
+  borderColor: COLOR_PRIMARY,
+  borderWidth: 1,
+  borderStyle: 'solid',
+  borderRadius: 50,
+  color: COLOR_PRIMARY,
+  paddingVertical: 0,
+  paddingHorizontal: 8,
+  textAlign: 'right',
+};
 
 function AyahRangePicker(props: {
   numberOfAyah: number;
@@ -27,7 +40,7 @@ function AyahRangePicker(props: {
         },
       ]}>
       <View style={{flexDirection: 'row'}}>
-        <CustomText style={{color: COLOR_PRIMARY}}>Ayat</CustomText>
+        <CustomText>Ayat</CustomText>
         <View style={{width: 9}} />
         <CustomText style={{color: COLOR_GREY}}>
           ({minAyah} - {maxAyah})
@@ -58,23 +71,10 @@ function AyahRangePicker(props: {
             setMinAyah(theNumber);
             setMinAyahText(theNumber + '');
           }}
-          style={{
-            flex: 1,
-            height: 24,
-            borderColor: COLOR_PRIMARY,
-            borderWidth: 1,
-            borderStyle: 'solid',
-            borderRadius: 50,
-            color: COLOR_PRIMARY,
-            paddingVertical: 0,
-            paddingHorizontal: 8,
-            textAlign: 'right',
-          }}
+          style={textInputStyle}
         />
         <View style={{width: 47, alignItems: 'center'}}>
-          <CustomText bold style={{color: COLOR_PRIMARY}}>
-            -
-          </CustomText>
+          <CustomText bold>-</CustomText>
         </View>
         <TextInput
           value={maxAyahText}
@@ -92,18 +92,7 @@ function AyahRangePicker(props: {
             setMaxAyah(theNumber);
             setMaxAyahText(theNumber + '');
           }}
-          style={{
-            flex: 1,
-            height: 24,
-            borderColor: COLOR_PRIMARY,
-            borderWidth: 1,
-            borderStyle: 'solid',
-            borderRadius: 50,
-            color: COLOR_PRIMARY,
-            paddingVertical: 0,
-            paddingHorizontal: 8,
-            textAlign: 'right',
-          }}
+          style={textInputStyle}
         />
       </View>
 

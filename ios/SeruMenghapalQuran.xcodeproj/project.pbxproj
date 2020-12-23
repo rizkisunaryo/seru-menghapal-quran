@@ -20,6 +20,7 @@
 		9CE3C0FBDEB0441A9C8DD149 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */; };
 		B8E2FCB57EF84E128EE79850 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B09218AD99CA48BFAE97373C /* Quicksand-Light.ttf */; };
 		C5A2E9E15985BB9A5A338FCD /* libPods-SeruMenghapalQuran-SeruMenghapalQuranTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F36FD6641BD6D81442298FE /* libPods-SeruMenghapalQuran-SeruMenghapalQuranTests.a */; };
+		C99C0B3572B747BEBF9917DA /* LPMQ-IsepMisbah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F223736615914E39B4329F84 /* LPMQ-IsepMisbah.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F3E913972B31574447799D3B /* Pods-SeruMenghapalQuran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran.debug.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran/Pods-SeruMenghapalQuran.debug.xcconfig"; sourceTree = "<group>"; };
 		F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Bold.ttf"; path = "../assets/fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		F223736615914E39B4329F84 /* LPMQ-IsepMisbah.ttf */ = {isa = PBXFileReference; name = "LPMQ-IsepMisbah.ttf"; path = "../assets/fonts/LPMQ-IsepMisbah.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */,
 				9BCB9535778F4C6DB4A0A7E5 /* Quicksand-Regular.ttf */,
 				B09218AD99CA48BFAE97373C /* Quicksand-Light.ttf */,
+				F223736615914E39B4329F84 /* LPMQ-IsepMisbah.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				9CE3C0FBDEB0441A9C8DD149 /* Quicksand-Bold.ttf in Resources */,
 				B8E2FCB57EF84E128EE79850 /* Quicksand-Light.ttf in Resources */,
+				C99C0B3572B747BEBF9917DA /* LPMQ-IsepMisbah.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

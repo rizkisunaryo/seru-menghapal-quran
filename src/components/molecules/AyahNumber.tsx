@@ -1,6 +1,5 @@
 import React from 'react';
 import {Dimensions, Image, View} from 'react-native';
-import {COLOR_PRIMARY} from '../../constants/Colors';
 import {STYLE_BOX_SHADOW} from '../../constants/Styles';
 import CustomText from '../atoms/CustomText';
 
@@ -50,10 +49,9 @@ function AyahNumber(props: {surahName: string; ayahNumber?: number}) {
               paddingHorizontal: 32,
               justifyContent: 'flex-end',
             }}>
-            <CustomText
-              style={{color: COLOR_PRIMARY, fontSize: 16, textAlign: 'center'}}>
+            <CustomText style={{fontSize: 16, textAlign: 'center'}}>
               Uji hafalanmu di surat{' '}
-              <CustomText bold style={{color: COLOR_PRIMARY, fontSize: 16}}>
+              <CustomText bold style={{fontSize: 16}}>
                 {props.surahName}
               </CustomText>{' '}
               ayat
@@ -63,7 +61,6 @@ function AyahNumber(props: {surahName: string; ayahNumber?: number}) {
             <CustomText
               bold
               style={{
-                color: COLOR_PRIMARY,
                 fontSize: Math.floor(ayahNumberWidth * 0.34),
               }}>
               {props.ayahNumber}
@@ -72,9 +69,7 @@ function AyahNumber(props: {surahName: string; ayahNumber?: number}) {
         </>
       ) : (
         <CoveringBox size={ayahNumberWidth}>
-          <CustomText style={{color: COLOR_PRIMARY, fontSize: 24}}>
-            Mulai acak ayat
-          </CustomText>
+          <CustomText style={{fontSize: 24}}>Mulai acak ayat</CustomText>
         </CoveringBox>
       )}
     </View>

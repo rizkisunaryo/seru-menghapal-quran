@@ -15,6 +15,8 @@ import {STYLE_BOX_SHADOW} from './constants/Styles';
 import AyahRangePicker from './components/organisms/AyahRangePicker';
 import AyahNumber from './components/molecules/AyahNumber';
 import SurahName from './components/molecules/SurahName';
+import AyahPlayer from './components/organisms/AyahPlayer';
+import data from './data';
 
 function Burger() {
   return (
@@ -39,6 +41,9 @@ function Burger() {
 
 function App() {
   const [showShadow, setShowShadow] = React.useState(false);
+  const [minAyah, setMinAyah] = React.useState(1);
+  const [maxAyah, setMaxAyah] = React.useState(286);
+  const [ayahNumber, setAyahNumber] = React.useState(0);
 
   return (
     <SafeAreaView style={{height: '100%'}}>
@@ -67,9 +72,7 @@ function App() {
           <CustomTouchableOpacity>
             <Burger />
           </CustomTouchableOpacity>
-          <CustomText style={{color: COLOR_PRIMARY}}>
-            Yuk menghafal Al-Quran!
-          </CustomText>
+          <CustomText>Yuk menghafal Al-Quran!</CustomText>
         </View>
       </View>
 
@@ -89,16 +92,24 @@ function App() {
 
           <AyahRangePicker
             numberOfAyah={286}
-            onRangeChange={(min, max) => console.log(min, max)}
+            onRangeChange={(min, max) => {
+              setMinAyah(min);
+              setMaxAyah(max);
+            }}
           />
 
           <View style={{height: 16}} />
 
-          <AyahNumber surahName="Al-Baqarah" ayahNumber={282} />
+          <AyahNumber surahName="Al-Baqarah" ayahNumber={ayahNumber} />
 
           <View style={{height: 32}} />
 
-          <View />
+          <AyahPlayer
+            minAyah={minAyah}
+            maxAyah={maxAyah}
+            onAyahSelected={setAyahNumber}
+            surahData={data[1]}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

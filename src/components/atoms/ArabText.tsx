@@ -2,15 +2,15 @@ import React from 'react';
 import {Text, TextProps} from 'react-native';
 import {COLOR_PRIMARY} from '../../constants/Colors';
 
-function CustomText(props: TextProps & {children?: any; bold?: boolean}) {
+function ArabText(props: TextProps & {children?: any; bold?: boolean}) {
   return (
     <Text
       {...props}
       style={[
         {
-          fontSize: 14,
+          fontSize: 20,
           color: COLOR_PRIMARY,
-          fontFamily: props.bold ? 'Quicksand-Bold' : 'Quicksand-Light',
+          fontFamily: 'LPMQ-IsepMisbah',
         },
         props.style,
       ]}>
@@ -19,4 +19,4 @@ function CustomText(props: TextProps & {children?: any; bold?: boolean}) {
   );
 }
 
-export default CustomText;
+export default ArabText;

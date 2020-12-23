@@ -5,19 +5,16 @@ import {
   View,
   StatusBar,
   Platform,
-  TouchableWithoutFeedback,
-  Keyboard,
-  Image,
   ScrollView,
-  Dimensions,
 } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
 
 import CustomText from './components/atoms/CustomText';
-import {COLOR_PRIMARY, COLOR_BLUE_2} from './constants/Colors';
+import {COLOR_PRIMARY} from './constants/Colors';
 import CustomTouchableOpacity from './components/atoms/CustomTouchableOpacity';
 import {STYLE_BOX_SHADOW} from './constants/Styles';
 import AyahRangePicker from './components/organisms/AyahRangePicker';
+import AyahNumber from './components/molecules/AyahNumber';
+import SurahName from './components/molecules/SurahName';
 
 function Burger() {
   return (
@@ -42,9 +39,6 @@ function Burger() {
 
 function App() {
   const [showShadow, setShowShadow] = React.useState(false);
-
-  const maxWidth = Dimensions.get('window').width - 64;
-  const ayahBackgroundWidth = maxWidth > 347 ? 347 : maxWidth;
 
   return (
     <SafeAreaView style={{height: '100%'}}>
@@ -89,25 +83,7 @@ function App() {
           }
         }}>
         <View style={{paddingHorizontal: 32}}>
-          <LinearGradient
-            locations={[0, 1]}
-            colors={[COLOR_BLUE_2, COLOR_PRIMARY]}
-            style={[
-              {
-                height: 94,
-                borderRadius: 16,
-                paddingLeft: 35,
-                justifyContent: 'center',
-              },
-              STYLE_BOX_SHADOW,
-            ]}>
-            <View style={{flexDirection: 'row', alignItems: 'flex-end'}}>
-              <CustomText bold style={{fontSize: 24, color: 'white'}}>
-                Al-Baqarah{' '}
-              </CustomText>
-              <CustomText style={{color: 'white'}}>(286 Ayat)</CustomText>
-            </View>
-          </LinearGradient>
+          <SurahName surahName="Al-Baqarah" numberOfAyah={286} />
 
           <View style={{height: 16}} />
 
@@ -118,24 +94,11 @@ function App() {
 
           <View style={{height: 16}} />
 
-          <View
-            style={[
-              STYLE_BOX_SHADOW,
-              {
-                width: ayahBackgroundWidth,
-                height: maxWidth,
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: 16,
-                backgroundColor: 'white',
-              },
-            ]}>
-            <Image
-              source={require('../assets/images/ayah-background.png')}
-              style={{maxWidth: '82%'}}
-              resizeMode="contain"
-            />
-          </View>
+          <AyahNumber surahName="Al-Baqarah" ayahNumber={282} />
+
+          <View style={{height: 32}} />
+
+          <View />
         </View>
       </ScrollView>
     </SafeAreaView>

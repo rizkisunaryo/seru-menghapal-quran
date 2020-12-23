@@ -7,6 +7,9 @@ import {
   Platform,
   TouchableWithoutFeedback,
   Keyboard,
+  Image,
+  ScrollView,
+  Dimensions,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -38,9 +41,20 @@ function Burger() {
 }
 
 function App() {
+  const [showShadow, setShowShadow] = React.useState(false);
+
+  const maxWidth = Dimensions.get('window').width - 64;
+  const ayahBackgroundWidth = maxWidth > 347 ? 347 : maxWidth;
+
   return (
-    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <SafeAreaView style={{paddingTop: 8, height: '100%'}}>
+    <SafeAreaView style={{height: '100%'}}>
+      <View
+        style={{
+          paddingTop: 8,
+          ...(showShadow
+            ? {...STYLE_BOX_SHADOW, backgroundColor: 'white'}
+            : null),
+        }}>
         <StatusBar
           translucent
           backgroundColor="transparent"
@@ -63,8 +77,18 @@ function App() {
             Yuk menghafal Al-Quran!
           </CustomText>
         </View>
+      </View>
 
-        <View style={[STYLE_BOX_SHADOW, {paddingHorizontal: 32}]}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        onScroll={(e) => {
+          if (!showShadow && e.nativeEvent.contentOffset.y > 0) {
+            setShowShadow(true);
+          } else if (showShadow && e.nativeEvent.contentOffset.y <= 0) {
+            setShowShadow(false);
+          }
+        }}>
+        <View style={{paddingHorizontal: 32}}>
           <LinearGradient
             locations={[0, 1]}
             colors={[COLOR_BLUE_2, COLOR_PRIMARY]}
@@ -91,9 +115,30 @@ function App() {
             numberOfAyah={286}
             onRangeChange={(min, max) => console.log(min, max)}
           />
+
+          <View style={{height: 16}} />
+
+          <View
+            style={[
+              STYLE_BOX_SHADOW,
+              {
+                width: ayahBackgroundWidth,
+                height: maxWidth,
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: 16,
+                backgroundColor: 'white',
+              },
+            ]}>
+            <Image
+              source={require('../assets/images/ayah-background.png')}
+              style={{maxWidth: '82%'}}
+              resizeMode="contain"
+            />
+          </View>
         </View>
-      </SafeAreaView>
-    </TouchableWithoutFeedback>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 

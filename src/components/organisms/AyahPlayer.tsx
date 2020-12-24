@@ -242,6 +242,8 @@ function AyahPlayer(props: {
   const [showReminder, setShowReminder] = React.useState(false);
   const [showAnswer, setShowAnswer] = React.useState(false);
 
+  React.useEffect(() => setActive(false), [props.surahData]);
+
   return (
     <>
       <View

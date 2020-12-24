@@ -3,6 +3,9 @@ import {DataType} from './DataType';
 const data: DataType = {
   chapterNo: 2,
   chapterName: 'Al-Baqarah',
+  chapterNameTranslate: {
+    id: 'Sapi Betina',
+  },
   lastVerseNo: 286,
   verses: {
     1: {

@@ -20,14 +20,22 @@ const textInputStyle: StyleProp<TextStyle> = {
 };
 
 function AyahRangePicker(props: {
+  surahNumber: number;
   numberOfAyah: number;
   onRangeChange: (minAyah: number, maxAyah: number) => void;
 }) {
-  const [minAyahText, setMinAyahText] = React.useState(1 + '');
+  const [minAyahText, setMinAyahText] = React.useState('1');
   const [minAyah, setMinAyah] = React.useState(1);
 
   const [maxAyah, setMaxAyah] = React.useState(props.numberOfAyah);
   const [maxAyahText, setMaxAyahText] = React.useState(props.numberOfAyah + '');
+
+  React.useEffect(() => {
+    setMinAyah(1);
+    setMinAyahText('1');
+    setMaxAyah(props.numberOfAyah);
+    setMaxAyahText(props.numberOfAyah + '');
+  }, [props.surahNumber, props.numberOfAyah]);
 
   return (
     <View

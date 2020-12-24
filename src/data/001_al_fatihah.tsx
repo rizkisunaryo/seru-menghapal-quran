@@ -3,8 +3,15 @@ import {DataType} from './DataType';
 const data: DataType = {
   chapterNo: 1,
   chapterName: 'Al-Fatihah',
+  chapterNameTranslate: {
+    id: 'Pembuka',
+  },
   lastVerseNo: 7,
   verses: {
+    1: {
+      helper: 'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ',
+      full: 'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ',
+    },
     2: {
       helper: 'اَلْحَمْدُ لِلّٰ',
       full: 'اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ',

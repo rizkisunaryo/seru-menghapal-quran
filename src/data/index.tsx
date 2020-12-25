@@ -8,46 +8,46 @@ import AlAraf from './007_al_araf';
 import AlAnfal from './008_al_anfal';
 import AtTaubah from './009_at_taubah';
 import Yunus from './010_yunus';
-// import Hud from './011_hud';
-// import Yusuf from './012_yusuf';
-// import ArRad from './013_ar_rad';
-// import Ibrahim from './014_ibrahim';
-// import AlHijr from './015_al_hijr';
-// import AnNahl from './016_an_nahl';
-// import AlIsra from './017_al_isra';
-// import AlKahfi from './018_al_kahfi';
-// import Maryam from './019_maryam';
-// import Taha from './020_taha';
-// import AlAnbiya from './021_al_anbiya';
-// import AlHajj from './022_al_hajj';
-// import AlMuminun from './023_al_muminun';
-// import AnNur from './024_an_nur';
-// import AlFurqan from './025_al_furqan';
-// import AsySyuara from './026_asy_syuara';
-// import AnNaml from './027_an_naml';
-// import AlQasas from './028_al_qasas';
-// import AlAnkabut from './029_al_ankabut';
-// import ArRum from './030_ar_rum';
-// import Luqman from './031_luqman';
-// import AsSajdah from './032_as_sajdah';
-// import AlAhzab from './033_al_ahzab';
-// import Saba from './034_saba';
-// import Fatir from './035_fatir';
-// import Yasin from './036_yasin';
-// import AsSaffat from './037_as_saffat';
-// import Sad from './038_sad';
-// import AzZumar from './039_az_zumar';
-// import Gafir from './040_gafir';
-// import Fussilat from './041_fussilat';
-// import AsySyura from './042_asy_syura';
-// import AzZukhruf from './043_az_zukhruf';
-// import AdDukhan from './044_ad_dukhan';
-// import AlJasiyah from './045_al_jasiyah';
-// import AlAhqaf from './046_al_ahqaf';
-// import Muhammad from './047_muhammad';
-// import AlFath from './048_al_fath';
-// import AlHujurat from './049_al_hujurat';
-// import Qaf from './050_qaf';
+import Hud from './011_hud';
+import Yusuf from './012_yusuf';
+import ArRad from './013_ar_rad';
+import Ibrahim from './014_ibrahim';
+import AlHijr from './015_al_hijr';
+import AnNahl from './016_an_nahl';
+import AlIsra from './017_al_isra';
+import AlKahfi from './018_al_kahfi';
+import Maryam from './019_maryam';
+import Taha from './020_taha';
+import AlAnbiya from './021_al_anbiya';
+import AlHajj from './022_al_hajj';
+import AlMuminun from './023_al_muminun';
+import AnNur from './024_an_nur';
+import AlFurqan from './025_al_furqan';
+import AsySyuara from './026_asy_syuara';
+import AnNaml from './027_an_naml';
+import AlQasas from './028_al_qasas';
+import AlAnkabut from './029_al_ankabut';
+import ArRum from './030_ar_rum';
+import Luqman from './031_luqman';
+import AsSajdah from './032_as_sajdah';
+import AlAhzab from './033_al_ahzab';
+import Saba from './034_saba';
+import Fatir from './035_fatir';
+import Yasin from './036_yasin';
+import AsSaffat from './037_as_saffat';
+import Sad from './038_sad';
+import AzZumar from './039_az_zumar';
+import Gafir from './040_gafir';
+import Fussilat from './041_fussilat';
+import AsySyura from './042_asy_syura';
+import AzZukhruf from './043_az_zukhruf';
+import AdDukhan from './044_ad_dukhan';
+import AlJasiyah from './045_al_jasiyah';
+import AlAhqaf from './046_al_ahqaf';
+import Muhammad from './047_muhammad';
+import AlFath from './048_al_fath';
+import AlHujurat from './049_al_hujurat';
+import Qaf from './050_qaf';
 // import AzZariyat from './051_az_zariyat';
 // import AtTur from './052_at_tur';
 // import AnNajm from './053_an_najm';
@@ -124,110 +124,110 @@ const data = [
   AlAnfal,
   AtTaubah,
   Yunus,
-  //   Hud,
-  //   Yusuf,
-  //   ArRad,
-  //   Ibrahim,
-  //   AlHijr,
-  //   AnNahl,
-  //   AlIsra,
-  //   AlKahfi,
-  //   Maryam,
-  //   Taha,
-  //   AlAnbiya,
-  //   AlHajj,
-  //   AlMuminun,
-  //   AnNur,
-  //   AlFurqan,
-  //   AsySyuara,
-  //   AnNaml,
-  //   AlQasas,
-  //   AlAnkabut,
-  //   ArRum,
-  //   Luqman,
-  //   AsSajdah,
-  //   AlAhzab,
-  //   Saba,
-  //   Fatir,
-  //   Yasin,
-  //   AsSaffat,
-  //   Sad,
-  //   AzZumar,
-  //   Gafir,
-  //   Fussilat,
-  //   AsySyura,
-  //   AzZukhruf,
-  //   AdDukhan,
-  //   AlJasiyah,
-  //   AlAhqaf,
-  //   Muhammad,
-  //   AlFath,
-  //   AlHujurat,
-  //   Qaf,
-  //   AzZariyat,
-  //   AtTur,
-  //   AnNajm,
-  //   AlQamar,
-  //   ArRahman,
-  //   AlWaqiah,
-  //   AlHadid,
-  //   AlMujadilah,
-  //   AlHasyr,
-  //   AlMumtahanah,
-  //   AsSaff,
-  //   AlJumuah,
-  //   AlMunafiqun,
-  //   AtTagabun,
-  //   AtTalaq,
-  //   AtTahrim,
-  //   AlMulk,
-  //   AlQalam,
-  //   AlHaqqah,
-  //   AlMaarij,
-  //   Nuh,
-  //   AlJinn,
-  //   AlMuzzammil,
-  //   AlMuddassir,
-  //   AlQiyamah,
-  //   AlInsan,
-  //   AlMursalat,
-  //   AnNaba,
-  //   AnNaziat,
-  //   Abasa,
-  //   AtTakwir,
-  //   AlInfitar,
-  //   AlMutaffifin,
-  //   AlInsyiqaq,
-  //   AlBuruj,
-  //   AtTariq,
-  //   AlAlaa,
-  //   AlGasyiyah,
-  //   AlFafjr,
-  //   AlBalad,
-  //   AsySyams,
-  //   AlLail,
-  //   AdDuha,
-  //   AsySyarh,
-  //   AtTin,
-  //   AlAlaq,
-  //   AlQadr,
-  //   AlBayyinah,
-  //   AlZalzalah,
-  //   AlAdiyat,
-  //   AlQariah,
-  //   AtTakasur,
-  //   AlAsr,
-  //   AlHumazah,
-  //   AlFil,
-  //   Quraisy,
-  //   AlMaun,
-  //   AlKausar,
-  //   AlKafirun,
-  //   AnNasr,
-  //   AlLahab,
-  //   AlIkhlas,
-  //   AlFalaq,
-  //   AnNas,
+  Hud,
+  Yusuf,
+  ArRad,
+  Ibrahim,
+  AlHijr,
+  AnNahl,
+  AlIsra,
+  AlKahfi,
+  Maryam,
+  Taha,
+  AlAnbiya,
+  AlHajj,
+  AlMuminun,
+  AnNur,
+  AlFurqan,
+  AsySyuara,
+  AnNaml,
+  AlQasas,
+  AlAnkabut,
+  ArRum,
+  Luqman,
+  AsSajdah,
+  AlAhzab,
+  Saba,
+  Fatir,
+  Yasin,
+  AsSaffat,
+  Sad,
+  AzZumar,
+  Gafir,
+  Fussilat,
+  AsySyura,
+  AzZukhruf,
+  AdDukhan,
+  AlJasiyah,
+  AlAhqaf,
+  Muhammad,
+  AlFath,
+  AlHujurat,
+  Qaf,
+  // AzZariyat,
+  // AtTur,
+  // AnNajm,
+  // AlQamar,
+  // ArRahman,
+  // AlWaqiah,
+  // AlHadid,
+  // AlMujadilah,
+  // AlHasyr,
+  // AlMumtahanah,
+  // AsSaff,
+  // AlJumuah,
+  // AlMunafiqun,
+  // AtTagabun,
+  // AtTalaq,
+  // AtTahrim,
+  // AlMulk,
+  // AlQalam,
+  // AlHaqqah,
+  // AlMaarij,
+  // Nuh,
+  // AlJinn,
+  // AlMuzzammil,
+  // AlMuddassir,
+  // AlQiyamah,
+  // AlInsan,
+  // AlMursalat,
+  // AnNaba,
+  // AnNaziat,
+  // Abasa,
+  // AtTakwir,
+  // AlInfitar,
+  // AlMutaffifin,
+  // AlInsyiqaq,
+  // AlBuruj,
+  // AtTariq,
+  // AlAlaa,
+  // AlGasyiyah,
+  // AlFafjr,
+  // AlBalad,
+  // AsySyams,
+  // AlLail,
+  // AdDuha,
+  // AsySyarh,
+  // AtTin,
+  // AlAlaq,
+  // AlQadr,
+  // AlBayyinah,
+  // AlZalzalah,
+  // AlAdiyat,
+  // AlQariah,
+  // AtTakasur,
+  // AlAsr,
+  // AlHumazah,
+  // AlFil,
+  // Quraisy,
+  // AlMaun,
+  // AlKausar,
+  // AlKafirun,
+  // AnNasr,
+  // AlLahab,
+  // AlIkhlas,
+  // AlFalaq,
+  // AnNas,
 ];
 
 export default data;

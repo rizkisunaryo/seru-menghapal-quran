@@ -1,12 +1,12 @@
 import {DataType} from './DataType';
 
 const data: DataType = {
-  chapterNo: 57,
-  chapterName: 'Al-Hadid',
+  chapterNo: 59,
+  chapterName: 'Al-Hasyr',
   chapterNameTranslate: {
-    id: 'Besi',
+    id: 'Pengusiran',
   },
-  lastVerseNo: 29,
+  lastVerseNo: 24,
   verses: {},
 };
 

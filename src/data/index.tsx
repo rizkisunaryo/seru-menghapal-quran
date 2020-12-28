@@ -48,14 +48,14 @@ import Muhammad from './047_muhammad';
 import AlFath from './048_al_fath';
 import AlHujurat from './049_al_hujurat';
 import Qaf from './050_qaf';
-// import AzZariyat from './051_az_zariyat';
-// import AtTur from './052_at_tur';
-// import AnNajm from './053_an_najm';
-// import AlQamar from './054_al_qamar';
-// import ArRahman from './055_ar_rahman';
-// import AlWaqiah from './056_al_waqiah';
-// import AlHadid from './057_al_hadid';
-// import AlMujadilah from './058_al_mujadilah';
+import AzZariyat from './051_az_zariyat';
+import AtTur from './052_at_tur';
+import AnNajm from './053_an_najm';
+import AlQamar from './054_al_qamar';
+import ArRahman from './055_ar_rahman';
+import AlWaqiah from './056_al_waqiah';
+import AlHadid from './057_al_hadid';
+import AlMujadilah from './058_al_mujadilah';
 // import AlHasyr from './059_al_hasyr';
 // import AlMumtahanah from './060_al_mumtahanah';
 // import AsSaff from './061_as_saff';
@@ -164,14 +164,14 @@ const data = [
   AlFath,
   AlHujurat,
   Qaf,
-  // AzZariyat,
-  // AtTur,
-  // AnNajm,
-  // AlQamar,
-  // ArRahman,
-  // AlWaqiah,
-  // AlHadid,
-  // AlMujadilah,
+  AzZariyat,
+  AtTur,
+  AnNajm,
+  AlQamar,
+  ArRahman,
+  AlWaqiah,
+  AlHadid,
+  AlMujadilah,
   // AlHasyr,
   // AlMumtahanah,
   // AsSaff,

@@ -2,7 +2,7 @@ import {DataType} from './DataType';
 
 const data: DataType = {
   chapterNo: 71,
-  chapterName: "Nuh",
+  chapterName: 'Nuh',
   chapterNameTranslate: {
     id: 'Nuh',
   },

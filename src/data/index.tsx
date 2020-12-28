@@ -63,14 +63,14 @@ import AlJumuah from './062_al_jumuah';
 import AlMunafiqun from './063_al_munafiqun';
 import AtTagabun from './064_at_tagabun';
 import AtTalaq from './065_at_talaq';
-// import AtTahrim from './066_at_tahrim';
-// import AlMulk from './067_al_mulk';
-// import AlQalam from './068_al_qalam';
-// import AlHaqqah from './069_al_haqqah';
-// import AlMaarij from './070_al_maarij';
-// import Nuh from './071_nuh';
-// import AlJinn from './072_al_jinn';
-// import AlMuzzammil from './073_al_muzzammil';
+import AtTahrim from './066_at_tahrim';
+import AlMulk from './067_al_mulk';
+import AlQalam from './068_al_qalam';
+import AlHaqqah from './069_al_haqqah';
+import AlMaarij from './070_al_maarij';
+import Nuh from './071_nuh';
+import AlJinn from './072_al_jinn';
+import AlMuzzammil from './073_al_muzzammil';
 // import AlMuddassir from './074_al_muddassir';
 // import AlQiyamah from './075_al_qiyamah';
 // import AlInsan from './076_al_insan';
@@ -179,14 +179,14 @@ const data = [
   AlMunafiqun,
   AtTagabun,
   AtTalaq,
-  // AtTahrim,
-  // AlMulk,
-  // AlQalam,
-  // AlHaqqah,
-  // AlMaarij,
-  // Nuh,
-  // AlJinn,
-  // AlMuzzammil,
+  AtTahrim,
+  AlMulk,
+  AlQalam,
+  AlHaqqah,
+  AlMaarij,
+  Nuh,
+  AlJinn,
+  AlMuzzammil,
   // AlMuddassir,
   // AlQiyamah,
   // AlInsan,

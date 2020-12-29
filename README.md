@@ -2,6 +2,8 @@
 
 This app is to help people memorize Al-Qur'an.
 
+![ezgif-7-a08495349c35](https://user-images.githubusercontent.com/2413398/103280906-19511180-4a04-11eb-8cab-3cb216d2a056.gif)
+
 # How to run
 
 ## Android development mode

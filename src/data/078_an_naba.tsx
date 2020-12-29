@@ -7,7 +7,16 @@ const data: DataType = {
     id: 'Berita Besar',
   },
   lastVerseNo: 40,
-  verses: {},
+  verses: {
+    1: {
+      helper: 'عَمَّ',
+      full: 'عَمَّ يَتَسَاۤءَلُوْنَۚ',
+    },
+    2: {
+      helper: 'عَنِ',
+      full: 'عَنِ النَّبَاِ الْعَظِيْمِۙ',
+    },
+  },
 };
 
 export default data;

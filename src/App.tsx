@@ -17,7 +17,7 @@ function App() {
   const [minAyah, setMinAyah] = React.useState(1);
   const [maxAyah, setMaxAyah] = React.useState(286);
   const [ayahNumber, setAyahNumber] = React.useState(0);
-  const [surahNumber, setSurahNumber] = React.useState(2);
+  const [surahNumber, setSurahNumber] = React.useState(1);
 
   const surahData = data.find((el) => el.chapterNo === surahNumber);
 
@@ -89,7 +89,9 @@ function App() {
       <SurahPicker
         onRequestClose={() => setShowSurahPicker(false)}
         visible={showSurahPicker}
-        quranData={data}
+        quranData={data.filter(
+          (el) => el.lastVerseNo === Object.keys(el.verses).length,
+        )}
         onPickSurah={(val) => {
           setSurahNumber(val);
           setShowSurahPicker(false);

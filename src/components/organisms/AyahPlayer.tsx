@@ -3,6 +3,7 @@ import {
   Dimensions,
   Image,
   Modal,
+  Platform,
   TouchableOpacity,
   TouchableWithoutFeedback,
   View,
@@ -163,34 +164,31 @@ function ReminderModal(props: {
   reminder: string;
 }) {
   return (
-    <>
-      <Modal
-        transparent
-        animationType="slide"
-        visible={props.visible}
-        onRequestClose={props.onRequestClose}>
-        <TouchableWithoutFeedback onPress={props.onRequestClose}>
-          <View
-            style={{
-              width: windowWidth,
-              height: windowHeight,
-            }}
-          />
-        </TouchableWithoutFeedback>
-
-        <ReminderAnswerBox
-          ayahNumber={props.ayahNumber}
-          content={props.reminder}
-          onBottomButtonPressed={props.onShowAnswerPressed}
-          onRequestClose={props.onRequestClose}
-          surahName={props.surahName}
-          title="Pengingat"
-          buttonBackgroundColor={COLOR_PRIMARY}
-          buttonLabel="Jawaban"
-          buttonLabelColor="white"
+    <Modal
+      transparent
+      animationType="slide"
+      visible={props.visible}
+      onRequestClose={props.onRequestClose}>
+      <TouchableWithoutFeedback onPress={props.onRequestClose}>
+        <View
+          style={{
+            width: windowWidth,
+            height: windowHeight,
+          }}
         />
-      </Modal>
-    </>
+      </TouchableWithoutFeedback>
+      <ReminderAnswerBox
+        ayahNumber={props.ayahNumber}
+        content={props.reminder}
+        onBottomButtonPressed={props.onShowAnswerPressed}
+        onRequestClose={props.onRequestClose}
+        surahName={props.surahName}
+        title="Pengingat"
+        buttonBackgroundColor={COLOR_PRIMARY}
+        buttonLabel="Jawaban"
+        buttonLabelColor="white"
+      />
+    </Modal>
   );
 }
 
@@ -203,31 +201,29 @@ function AnswerModal(props: {
   ayah: string;
 }) {
   return (
-    <>
-      <Modal
-        transparent
-        animationType="slide"
-        visible={props.visible}
-        onRequestClose={props.onRequestClose}>
-        <TouchableWithoutFeedback onPress={props.onRequestClose}>
-          <View
-            style={{
-              width: windowWidth,
-              height: windowHeight,
-            }}
-          />
-        </TouchableWithoutFeedback>
-        <ReminderAnswerBox
-          ayahNumber={props.ayahNumber}
-          content={props.ayah}
-          onBottomButtonPressed={props.onShowReminderPressed}
-          onRequestClose={props.onRequestClose}
-          surahName={props.surahName}
-          title="Jawaban"
-          buttonLabel="Pengingat"
+    <Modal
+      transparent
+      animationType="slide"
+      visible={props.visible}
+      onRequestClose={props.onRequestClose}>
+      <TouchableWithoutFeedback onPress={props.onRequestClose}>
+        <View
+          style={{
+            width: windowWidth,
+            height: windowHeight,
+          }}
         />
-      </Modal>
-    </>
+      </TouchableWithoutFeedback>
+      <ReminderAnswerBox
+        ayahNumber={props.ayahNumber}
+        content={props.ayah}
+        onBottomButtonPressed={props.onShowReminderPressed}
+        onRequestClose={props.onRequestClose}
+        surahName={props.surahName}
+        title="Jawaban"
+        buttonLabel="Pengingat"
+      />
+    </Modal>
   );
 }
 
@@ -301,24 +297,26 @@ function AyahPlayer(props: {
         />
       </View>
 
-      <Modal
-        transparent
-        animationType="fade"
-        visible={showReminder || showAnswer}
-        onRequestClose={() => {
-          setShowReminder(false);
-          setShowAnswer(false);
-        }}>
-        <TouchableWithoutFeedback>
-          <View
-            style={{
-              width: windowWidth,
-              height: windowHeight,
-              backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            }}
-          />
-        </TouchableWithoutFeedback>
-      </Modal>
+      {Platform.OS === 'android' && (
+        <Modal
+          transparent
+          animationType="fade"
+          visible={showReminder || showAnswer}
+          onRequestClose={() => {
+            setShowReminder(false);
+            setShowAnswer(false);
+          }}>
+          <TouchableWithoutFeedback>
+            <View
+              style={{
+                width: windowWidth,
+                height: windowHeight,
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+              }}
+            />
+          </TouchableWithoutFeedback>
+        </Modal>
+      )}
 
       <ReminderModal
         onRequestClose={() => setShowReminder(false)}

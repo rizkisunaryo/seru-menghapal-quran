@@ -26,8 +26,6 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
 			<key>localhost</key>
@@ -57,7 +55,7 @@
 	<array>
 		<string>Quicksand-Bold.ttf</string>
 		<string>Quicksand-Light.ttf</string>
-		<string>LPMQ-IsepMisbah.ttf</string>
+		<string>LPMQIsepMisbah.ttf</string>
 	</array>
 </dict>
 </plist>

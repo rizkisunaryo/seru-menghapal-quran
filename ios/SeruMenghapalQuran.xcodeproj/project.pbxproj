@@ -15,12 +15,12 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* SeruMenghapalQuranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SeruMenghapalQuranTests.m */; };
+		45829BAAD288487E87651567 /* LPMQIsepMisbah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739F20A5D6C34B2489D2B2B7 /* LPMQIsepMisbah.ttf */; };
 		6DE1035BF7DE317FE9E328C2 /* libPods-SeruMenghapalQuran.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B32E30124374EF66F22F144 /* libPods-SeruMenghapalQuran.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9CE3C0FBDEB0441A9C8DD149 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */; };
 		B8E2FCB57EF84E128EE79850 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B09218AD99CA48BFAE97373C /* Quicksand-Light.ttf */; };
 		C5A2E9E15985BB9A5A338FCD /* libPods-SeruMenghapalQuran-SeruMenghapalQuranTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F36FD6641BD6D81442298FE /* libPods-SeruMenghapalQuran-SeruMenghapalQuranTests.a */; };
-		C99C0B3572B747BEBF9917DA /* LPMQ-IsepMisbah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F223736615914E39B4329F84 /* LPMQ-IsepMisbah.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +55,9 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SeruMenghapalQuran/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* SeruMenghapalQuran-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeruMenghapalQuran-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* SeruMenghapalQuran-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeruMenghapalQuran-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		739F20A5D6C34B2489D2B2B7 /* LPMQIsepMisbah.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = LPMQIsepMisbah.ttf; path = ../assets/fonts/LPMQIsepMisbah.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SeruMenghapalQuran/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		920AE01196CF291853BA329C /* Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.release.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.release.xcconfig"; sourceTree = "<group>"; };
-		9BCB9535778F4C6DB4A0A7E5 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		A73D6623F5213E78782B8867 /* Pods-SeruMenghapalQuran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran.release.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran/Pods-SeruMenghapalQuran.release.xcconfig"; sourceTree = "<group>"; };
 		B09218AD99CA48BFAE97373C /* Quicksand-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.ttf"; path = "../assets/fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		D5B2C53165757B8DB1E88994 /* Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.debug.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,7 +65,6 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F3E913972B31574447799D3B /* Pods-SeruMenghapalQuran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeruMenghapalQuran.debug.xcconfig"; path = "Target Support Files/Pods-SeruMenghapalQuran/Pods-SeruMenghapalQuran.debug.xcconfig"; sourceTree = "<group>"; };
 		F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Bold.ttf"; path = "../assets/fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
-		F223736615914E39B4329F84 /* LPMQ-IsepMisbah.ttf */ = {isa = PBXFileReference; name = "LPMQ-IsepMisbah.ttf"; path = "../assets/fonts/LPMQ-IsepMisbah.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,9 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				F6441A7E6AEB4E91BBEF2D42 /* Quicksand-Bold.ttf */,
-				9BCB9535778F4C6DB4A0A7E5 /* Quicksand-Regular.ttf */,
 				B09218AD99CA48BFAE97373C /* Quicksand-Light.ttf */,
-				F223736615914E39B4329F84 /* LPMQ-IsepMisbah.ttf */,
+				739F20A5D6C34B2489D2B2B7 /* LPMQIsepMisbah.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -212,6 +210,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				4DF74E02309D0674CD39F2F6 /* [CP] Copy Pods Resources */,
+				75FE4EE52081714F4AB8920D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +233,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				7673B7292A47C1F4F6B8C9E4 /* [CP] Copy Pods Resources */,
+				F463A5B5858501558E914582 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,7 +344,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				9CE3C0FBDEB0441A9C8DD149 /* Quicksand-Bold.ttf in Resources */,
 				B8E2FCB57EF84E128EE79850 /* Quicksand-Light.ttf in Resources */,
-				C99C0B3572B747BEBF9917DA /* LPMQ-IsepMisbah.ttf in Resources */,
+				45829BAAD288487E87651567 /* LPMQIsepMisbah.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +434,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		75FE4EE52081714F4AB8920D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests/Pods-SeruMenghapalQuran-SeruMenghapalQuranTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7673B7292A47C1F4F6B8C9E4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +490,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F463A5B5858501558E914582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeruMenghapalQuran/Pods-SeruMenghapalQuran-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeruMenghapalQuran/Pods-SeruMenghapalQuran-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -790,6 +826,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -850,6 +887,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

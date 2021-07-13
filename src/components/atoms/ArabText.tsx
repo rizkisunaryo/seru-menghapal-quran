@@ -10,7 +10,7 @@ function ArabText(props: TextProps & {children?: any; bold?: boolean}) {
         {
           fontSize: 20,
           color: COLOR_PRIMARY,
-          fontFamily: 'LPMQ-IsepMisbah',
+          fontFamily: 'LPMQIsepMisbah',
         },
         props.style,
       ]}>

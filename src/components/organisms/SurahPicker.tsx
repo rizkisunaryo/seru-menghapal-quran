@@ -40,7 +40,7 @@ function SurahPicker(props: {
       />
       {searchResultData.length > 0 ? (
         <FlatList
-          onScroll={(e) => {
+          onScroll={e => {
             if (!showShadow && e.nativeEvent.contentOffset.y > 0) {
               setShowShadow(true);
             } else if (showShadow && e.nativeEvent.contentOffset.y <= 0) {
@@ -68,7 +68,7 @@ function SurahPicker(props: {
               </CustomText>
             </TouchableOpacity>
           )}
-          keyExtractor={(item) => item.chapterNo + ''}
+          keyExtractor={item => item.chapterNo + ''}
         />
       ) : (
         <View

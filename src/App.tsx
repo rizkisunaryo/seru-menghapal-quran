@@ -19,7 +19,7 @@ function App() {
   const [ayahNumber, setAyahNumber] = React.useState(0);
   const [surahNumber, setSurahNumber] = React.useState(1);
 
-  const surahData = data.find((el) => el.chapterNo === surahNumber);
+  const surahData = data.find(el => el.chapterNo === surahNumber);
 
   React.useEffect(() => {
     setAyahNumber(0);
@@ -43,7 +43,7 @@ function App() {
 
         <ScrollView
           showsVerticalScrollIndicator={false}
-          onScroll={(e) => {
+          onScroll={e => {
             if (!showShadow && e.nativeEvent.contentOffset.y > 0) {
               setShowShadow(true);
             } else if (showShadow && e.nativeEvent.contentOffset.y <= 0) {
@@ -90,9 +90,9 @@ function App() {
         onRequestClose={() => setShowSurahPicker(false)}
         visible={showSurahPicker}
         quranData={data.filter(
-          (el) => el.lastVerseNo === Object.keys(el.verses).length,
+          el => el.lastVerseNo === Object.keys(el.verses).length,
         )}
-        onPickSurah={(val) => {
+        onPickSurah={val => {
           setSurahNumber(val);
           setShowSurahPicker(false);
         }}

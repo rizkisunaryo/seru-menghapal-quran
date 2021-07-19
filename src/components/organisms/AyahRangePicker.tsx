@@ -66,7 +66,7 @@ function AyahRangePicker(props: {
         <TextInput
           value={minAyahText}
           keyboardType="numeric"
-          onChangeText={(text) => {
+          onChangeText={text => {
             setMinAyahText(text);
           }}
           onBlur={() => {
@@ -87,7 +87,7 @@ function AyahRangePicker(props: {
         <TextInput
           value={maxAyahText}
           keyboardType="numeric"
-          onChangeText={(text) => {
+          onChangeText={text => {
             setMaxAyahText(text);
           }}
           onBlur={() => {
